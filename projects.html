@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Alina Proskurnia</title>
+<meta name="description" content="Alina Proskurnia — UI/UX Artist for mobile games. Shops, HUDs, live-ops features, logos and art direction.">
+<meta property="og:title" content="Projects — Alina Proskurnia">
+<meta property="og:description" content="Alina Proskurnia — UI/UX Artist for mobile games. Shops, HUDs, live-ops features, logos and art direction.">
+<meta property="og:image" content="assets/cover-shop.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff;color:#1d1d1f;-webkit-font-smoothing:antialiased}
+a{color:#1d1d1f;text-decoration:none}
+a:hover{color:#66666b}
+.btn-dark{transition:background .25s ease}
+.btn-dark:hover{background:#3a3a3c;color:#ffffff}
+.pill{transition:background .25s ease,color .25s ease;cursor:pointer;font-family:inherit;border:0}
+.pill:hover{background:#e8e8ed}
+.pill.on,.pill.on:hover{background:#1d1d1f;color:#ffffff}
+.card .cover{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card:hover .cover{transform:scale(1.04)}
+.card .arrow{transition:transform .35s ease,opacity .35s ease;opacity:0;transform:translateX(-6px)}
+.card:hover .arrow{opacity:1;transform:translateX(0)}
+.fade{animation:fadeUp .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.nav-pill{transition:background .2s ease}
+.nav-pill:hover{background:rgba(0,0,0,0.1);color:#1d1d1f}
+.say-hi{transition:background .2s ease}
+.say-hi:hover{background:#3a3a3c;color:#ffffff}
+@media (max-width:760px){
+  .grid{grid-template-columns:minmax(0,1fr)!important}
+  .nav-hide{display:none!important}
+  .sub-hide{display:none!important}
+  .brand{font-size:17px!important}
+}
+@media (prefers-reduced-motion: reduce){.fade{animation:none}.card .cover{transition:none}}
+@media (max-width:860px){
+  .navbar{flex-wrap:wrap!important;height:auto!important;padding:10px 16px!important;row-gap:10px!important}
+  .navbar .brand{flex:1 1 auto!important;font-size:18px!important}
+  .nav-end{flex:0 0 auto!important;order:2}
+  .nav-mid{order:3;flex:1 1 100%;justify-content:center}
+}
+@media (max-width:420px){
+  .nav-pill{padding:0 14px!important;font-size:13px!important}
+}
+.live-dot{box-shadow:0 0 0 0 rgba(48,209,88,0.55);animation:livePulse 2.4s ease-out infinite}
+@keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(48,209,88,0.55)}70%{box-shadow:0 0 0 7px rgba(48,209,88,0)}100%{box-shadow:0 0 0 0 rgba(48,209,88,0)}}
+@media (prefers-reduced-motion: reduce){.live-dot{animation:none;box-shadow:0 0 6px rgba(48,209,88,0.7)}}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', Inter, system-ui, sans-serif; color: #1d1d1f; background: #ffffff">
+
+  <header style="position: sticky; top: 0; z-index: 50">
+    <div style="background: rgba(255,255,255,0.7); backdrop-filter: saturate(180%) blur(22px); -webkit-backdrop-filter: saturate(180%) blur(22px)">
+      <nav class="navbar" aria-label="Main" style="max-width: 1240px; margin: 0 auto; height: 64px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+        <a class="brand" href="index.html" style="flex: 1 1 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #1d1d1f; white-space: nowrap">Alina Proskurnia</a>
+        <div class="nav-mid" style="display: flex; align-items: center; gap: 8px">
+          <a class="nav-pill" href="projects.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.12); font-size: 14px; font-weight: 600; color: #1d1d1f">My Projects</a>
+          <a class="nav-pill" href="index.html#about" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.05); font-size: 14px; font-weight: 500; color: #1d1d1f">About</a>
+          <a class="nav-pill" href="index.html#blog" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.05); font-size: 14px; font-weight: 500; color: #1d1d1f">Blog</a>
+        </div>
+        <div class="nav-end" style="flex: 1 1 0; display: flex; justify-content: flex-end">
+          <a class="say-hi" href="index.html#contact" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 24px; border-radius: 999px; background: #1d1d1f; font-size: 14px; font-weight: 600; color: #ffffff">Say Hi</a>
+        </div>
+      </nav>
+    </div>
+    <div class="subbar" style="background: rgba(22,22,24,0.52); backdrop-filter: saturate(160%) blur(30px); -webkit-backdrop-filter: saturate(160%) blur(30px); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25); color: #ffffff">
+      <div style="max-width: 1240px; margin: 0 auto; min-height: 34px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 12.5px; letter-spacing: 0.01em"><span class="sub-hide" style="color: rgba(255, 255, 255, 0.72)"><b>UI/UX Artist — Games</b></span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; color: rgba(255, 255, 255, 0.94)"><span class="live-dot" aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: rgb(48, 209, 88)"></span><b>Available for thoughtful game projects</b><span style="color: rgba(255, 255, 255, 0.6)"><b>100%</b></span></span>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 120px; box-sizing: border-box">
+    <h1 style="margin: 0; font-family: Newsreader, 'Tiempos Headline', Georgia, serif; font-weight: 400; font-size: clamp(52px, 7vw, 96px); line-height: 1; letter-spacing: -0.03em">Projects</h1>
+    <p style="margin: 20px 0 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #66666b">Shops, HUDs, live-ops features and art direction for mobile and AR games. New case studies are on the way.</p>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 56px; padding-bottom: 24px; border-bottom: 1px solid #e5e5ea">
+      <div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; gap: 8px">
+        
+          <button type="button" class="pill on" aria-pressed="true" data-filter="All" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">All</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="UI/UX" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">UI/UX</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="Monetization" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">Monetization</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="Live-ops" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">Live-ops</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="Illustration" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">Illustration</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="Snap Games" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">Snap Games</button>
+        
+          <button type="button" class="pill" aria-pressed="false" data-filter="Personal" style="min-height: 40px; padding: 0 18px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 14px; font-weight: 500">Personal</button>
+        
+      </div>
+      <div id="count" aria-live="polite" style="font-size: 14px; color: #66666b">8 projects</div>
+    </div>
+
+    <div class="grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 32px; margin-top: 48px">
+      
+        <div class="fade" data-tags="UI/UX|Monetization" style="animation-delay: 0ms">
+          
+            <a class="card" href="shop-redesign.html" style="display: block; color: #1d1d1f">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #f5f5f7">
+                <img class="cover" src="assets/cover-shop.jpg" alt="Triple Match 3D — Shop UI/UX Redesign" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              </div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 20px">
+                <div style="font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em">Triple Match 3D — Shop UI/UX Redesign</div>
+                <span class="arrow" aria-hidden="true" style="font-size: 20px">→</span>
+              </div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Ilyon (Boombox Studio) · 2024–present</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">UI/UX</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Monetization</span>
+                
+              </div>
+            </a>
+          
+          
+        </div>
+      
+        <div class="fade" data-tags="Illustration|Logo|3D" style="animation-delay: 60ms">
+          
+            <a class="card" href="game-logo.html" style="display: block; color: #1d1d1f">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #f5f5f7">
+                <img class="cover" src="assets/logo-cover.jpg" alt="Triple Match 3D — 3D Game Logo" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              </div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 20px">
+                <div style="font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em">Triple Match 3D — 3D Game Logo</div>
+                <span class="arrow" aria-hidden="true" style="font-size: 20px">→</span>
+              </div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Ilyon (Boombox Studio) · Blender, Photoshop</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Illustration</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Logo</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">3D</span>
+                
+              </div>
+            </a>
+          
+          
+        </div>
+      
+        <div class="fade" data-tags="UI/UX|Illustration" style="animation-delay: 120ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #eef0f4; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Merge Game — HUD &amp; Icon System</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Freelance · 2022–2024</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">UI/UX</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Illustration</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+        <div class="fade" data-tags="UI/UX|Monetization" style="animation-delay: 180ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #f1efe9; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Farm Adventure — Shop UX Exploration</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Freelance · 2022–2024</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">UI/UX</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Monetization</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+        <div class="fade" data-tags="Snap Games|Art direction" style="animation-delay: 240ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #eef3ef; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Snapchat AR Games — Art Direction &amp; Production</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Snapchat · 2016–2022</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Snap Games</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Art direction</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+        <div class="fade" data-tags="Live-ops|Illustration" style="animation-delay: 300ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #f4eeee; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Live-ops Event UI</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Event features &amp; illustrations</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Live-ops</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Illustration</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+        <div class="fade" data-tags="UI/UX|Illustration" style="animation-delay: 360ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #efeef4; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Vikings MMO — GUI, Characters &amp; Buildings</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">GUI · Characters · Isometric</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">UI/UX</span>
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Illustration</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+        <div class="fade" data-tags="Personal" style="animation-delay: 420ms">
+          
+          
+            <div class="card">
+              <div style="aspect-ratio: 16 / 11; border-radius: 24px; overflow: hidden; background: #eef0ec; display: flex; align-items: center; justify-content: center">
+                <div class="cover" style="font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 28px; color: rgba(29,29,31,0.42)">Coming soon</div>
+              </div>
+              <div style="margin-top: 20px; font-family: Newsreader, Georgia, serif; font-size: 28px; line-height: 1.15; letter-spacing: -0.015em; color: #1d1d1f">Personal UI explorations</div>
+              <div style="margin-top: 6px; font-size: 15px; color: #66666b">Personal project</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px">
+                
+                  <span style="padding: 5px 11px; border-radius: 999px; background: #f5f5f7; font-size: 13px; color: #1d1d1f">Personal</span>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+    </div>
+  </main>
+
+  <footer style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 40px; box-sizing: border-box; border-top: 1px solid #e5e5ea; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: #66666b">
+    <span>© 2026 Alina Proskurnia</span>
+    <a target="_blank" rel="noopener noreferrer" href="mailto:aproskurnya1991@gmail.com" style="color: #66666b">aproskurnya1991@gmail.com</a>
+  </footer>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('[data-filter]'), items=document.querySelectorAll('[data-tags]'), count=document.getElementById('count');
+  function apply(f){
+    var n=0;
+    btns.forEach(function(b){var on=b.getAttribute('data-filter')===f; b.className=on?'pill on':'pill'; b.setAttribute('aria-pressed',on?'true':'false');});
+    items.forEach(function(it){
+      var show=f==='All'||it.getAttribute('data-tags').split('|').indexOf(f)!==-1;
+      it.style.display=show?'':'none';
+      if(show){it.style.animation='none'; void it.offsetWidth; it.style.animation=''; it.style.animationDelay=(n*60)+'ms'; n++;}
+    });
+    if(count) count.textContent=n+(n===1?' project':' projects');
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-filter'));});});
+})();
+</script>
+</body>
+</html>

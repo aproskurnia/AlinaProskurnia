@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alina Proskurnia — UI/UX Artist</title>
+<meta name="description" content="Alina Proskurnia — UI/UX Artist for mobile games. Shops, HUDs, live-ops features, logos and art direction.">
+<meta property="og:title" content="Alina Proskurnia — UI/UX Artist">
+<meta property="og:description" content="Alina Proskurnia — UI/UX Artist for mobile games. Shops, HUDs, live-ops features, logos and art direction.">
+<meta property="og:image" content="assets/cover-shop.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff;color:#1d1d1f;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#1d1d1f;text-decoration:none}
+a:hover{color:#66666b}
+.nav-link{transition:color .2s ease}
+.btn-dark{transition:transform .25s ease,background .25s ease}
+.btn-dark:hover{background:#3a3a3c;color:#ffffff;transform:scale(1.02)}
+.btn-light{transition:background .25s ease}
+.btn-light:hover{background:#ececef;color:#1d1d1f}
+.card .cover{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card:hover .cover{transform:scale(1.045)}
+.card .arrow{transition:transform .35s ease,opacity .35s ease;opacity:0;transform:translateX(-6px)}
+.card:hover .arrow{opacity:1;transform:translateX(0)}
+.row-link{transition:background .2s ease}
+.row-link:hover{background:#f5f5f7;color:#1d1d1f}
+@media (max-width:860px){
+  .two-col{grid-template-columns:minmax(0,1fr)!important;gap:32px!important}
+  .exp-row{grid-template-columns:minmax(0,1fr)!important;gap:4px!important}
+  .nav-hide{display:none!important}
+}
+@media (max-width:600px){
+  .cf{width:270px!important;height:290px!important;margin:0 -26px!important}
+  .cf-title{font-size:14px!important;min-height:44px!important}
+}
+.nav-pill{transition:background .2s ease}
+.nav-pill:hover{background:rgba(0,0,0,0.1);color:#1d1d1f}
+.say-hi{transition:background .2s ease}
+.say-hi:hover{background:#3a3a3c;color:#ffffff}
+.btn-outline{transition:border-color .2s ease,background .2s ease}
+.btn-outline:hover{border-color:#1d1d1f!important;color:#1d1d1f}
+.ql{transition:background .2s ease}
+.ql:hover{background:#e8e8ed;color:#1d1d1f}
+.cf .arrow{opacity:.5;transform:none}
+.cf:hover .arrow{opacity:1}
+@media (max-width:760px){
+  .nav-hide{display:none!important}
+  .sub-hide{display:none!important}
+  .brand{font-size:17px!important}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .card .cover{transition:none}
+}
+@media (max-width:860px){
+  .navbar{flex-wrap:wrap!important;height:auto!important;padding:10px 16px!important;row-gap:10px!important}
+  .navbar .brand{flex:1 1 auto!important;font-size:18px!important}
+  .nav-end{flex:0 0 auto!important;order:2}
+  .nav-mid{order:3;flex:1 1 100%;justify-content:center}
+}
+@media (max-width:420px){
+  .nav-pill{padding:0 14px!important;font-size:13px!important}
+}
+.live-dot{box-shadow:0 0 0 0 rgba(48,209,88,0.55);animation:livePulse 2.4s ease-out infinite}
+@keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(48,209,88,0.55)}70%{box-shadow:0 0 0 7px rgba(48,209,88,0)}100%{box-shadow:0 0 0 0 rgba(48,209,88,0)}}
+@media (prefers-reduced-motion: reduce){.live-dot{animation:none;box-shadow:0 0 6px rgba(48,209,88,0.7)}}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', Inter, system-ui, sans-serif; color: #1d1d1f; background: #ffffff">
+
+  <!-- NAV: locked, frosted glass -->
+  <header style="position: sticky; top: 0; z-index: 50">
+    <div style="background: rgba(255,255,255,0.7); backdrop-filter: saturate(180%) blur(22px); -webkit-backdrop-filter: saturate(180%) blur(22px)">
+      <nav class="navbar" aria-label="Main" style="max-width: 1240px; margin: 0 auto; height: 64px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+        <a class="brand" href="index.html" style="flex: 1 1 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #1d1d1f; white-space: nowrap">Alina Proskurnia</a>
+        <div class="nav-mid" style="display: flex; align-items: center; gap: 8px">
+          <a class="nav-pill" href="projects.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.05); font-size: 14px; font-weight: 500; color: #1d1d1f">My Projects</a>
+          <a class="nav-pill" href="#about" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.05); font-size: 14px; font-weight: 500; color: #1d1d1f">About</a>
+          <a class="nav-pill" href="#blog" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: rgba(0,0,0,0.05); font-size: 14px; font-weight: 500; color: #1d1d1f">Blog</a>
+        </div>
+        <div class="nav-end" style="flex: 1 1 0; display: flex; justify-content: flex-end">
+          <a class="say-hi" href="#contact" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 24px; border-radius: 999px; background: #1d1d1f; font-size: 14px; font-weight: 600; color: #ffffff">Say Hi</a>
+        </div>
+      </nav>
+    </div>
+    <div class="subbar" style="background: rgba(22,22,24,0.52); backdrop-filter: saturate(160%) blur(30px); -webkit-backdrop-filter: saturate(160%) blur(30px); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 24px -12px rgba(0,0,0,0.25); color: #ffffff">
+      <div style="max-width: 1240px; margin: 0 auto; min-height: 34px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 12.5px; letter-spacing: 0.01em"><span class="sub-hide" style="color: rgba(255, 255, 255, 0.72)"><b>UI/UX Artist — Games</b></span>
+        <span style="display: inline-flex; align-items: center; gap: 9px; color: rgba(255, 255, 255, 0.94)"><span class="live-dot" aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: rgb(48, 209, 88)"></span><b>Available for thoughtful game projects</b><span style="color: rgba(255, 255, 255, 0.6)"><b>100%</b></span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 24px; box-sizing: border-box; text-align: center">
+    <h1 style="margin: 0 auto; max-width: 980px; font-family: Newsreader, 'Tiempos Headline', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6.4vw, 92px); line-height: 1.02; letter-spacing: -0.025em; color: #1d1d1f">I make every tap feel clear, playful, and <i>rewarding.</i></h1>
+    <p style="margin: 28px auto 0; max-width: 633px; font-size: 19px; line-height: 1.55; color: #66666b">15+ years across game art and product management. I turn feature ideas into clean, playful interfaces — then use data and player behavior to make them better.</p>
+    
+    
+  </section>
+
+  <!-- SELECTED WORK CAROUSEL -->
+  <section id="projects" aria-label="Projects" style="padding: 0 0 72px">
+    <div id="cf-wrap" style="overflow: hidden; width: 100%; padding: 56px 0 72px">
+      <div id="cf-track" style="position: relative; display: flex; align-items: center; width: max-content; padding: 0 40px; will-change: transform">
+        
+          
+            <a class="cf card" href="shop-redesign.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/cover-shop.jpg" alt="Triple Match 3D — Shop" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Shop<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+            <a class="cf card" href="game-logo.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/logo-cover.jpg" alt="Triple Match 3D — Logo" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Logo<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e9ebf0; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Merge Game HUD</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eeebe4; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Farm Adventure Shop</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e7eee9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Snap AR Games</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #f1e9e9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Live-ops Events</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eae9f1; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Vikings MMO</span>
+            </div>
+          
+        
+          
+            <a class="cf card" href="shop-redesign.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/cover-shop.jpg" alt="Triple Match 3D — Shop" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Shop<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+            <a class="cf card" href="game-logo.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/logo-cover.jpg" alt="Triple Match 3D — Logo" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Logo<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e9ebf0; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Merge Game HUD</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eeebe4; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Farm Adventure Shop</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e7eee9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Snap AR Games</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #f1e9e9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Live-ops Events</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eae9f1; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Vikings MMO</span>
+            </div>
+          
+        
+          
+            <a class="cf card" href="shop-redesign.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/cover-shop.jpg" alt="Triple Match 3D — Shop" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Shop<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+            <a class="cf card" href="game-logo.html" style="position: relative; display: block; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e8e8ed; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.32); transform-origin: center center; color: #1d1d1f">
+              <img class="cover" src="assets/logo-cover.jpg" alt="Triple Match 3D — Logo" style="display: block; width: 100%; height: 100%; object-fit: cover">
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Triple Match 3D — Logo<span class="arrow" aria-hidden="true">↗</span></span>
+            </a>
+          
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e9ebf0; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Merge Game HUD</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eeebe4; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Farm Adventure Shop</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #e7eee9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Snap AR Games</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #f1e9e9; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Live-ops Events</span>
+            </div>
+          
+        
+          
+          
+            <div class="cf card" style="position: relative; width: 380px; height: 400px; flex: none; margin: 0 -34px; border-radius: 32px; overflow: hidden; background: #eae9f1; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.22); transform-origin: center center">
+              <div class="cover" style="position: absolute; inset: 0 0 80px; display: flex; align-items: center; justify-content: center; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 26px; color: rgba(29,29,31,0.45)">Coming soon</div>
+              <span class="cf-title" style="position: absolute; left: 22px; right: 22px; bottom: 22px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 0 20px; border-radius: 999px; background: rgba(255,255,255,0.74); font-size: 16px; font-weight: 500; text-align: center; color: #1d1d1f">Vikings MMO</span>
+            </div>
+          
+        
+      </div>
+    </div>
+
+    <nav aria-label="Project shortcuts" style="display: flex; justify-content: center; padding: 0 24px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; padding: 6px; border-radius: 999px; background: #f5f5f7">
+        <a class="ql" href="shop-redesign.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 999px; font-size: 15px; font-weight: 500; color: #1d1d1f">Triple Match 3D ↗</a>
+        <a class="ql" href="projects.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 999px; font-size: 15px; font-weight: 500; color: #1d1d1f">Snap Games ↗</a>
+        <a class="ql" href="projects.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 999px; font-size: 15px; font-weight: 500; color: #1d1d1f">Personal ↗</a>
+        <a class="ql" href="projects.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 999px; font-size: 15px; font-weight: 500; color: #1d1d1f">All Projects ↗</a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="background: #f5f5f7; padding: 88px 24px 88px; scroll-margin-top: 56px">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div class="two-col" style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: start">
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.025em">Artist’s eye.<br>Product brain.<br><i>Player first.</i></h2>
+        <div>
+          <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #1d1d1f">I design interfaces that support the player without getting in their way. My background across UI/UX, concept art, product analytics and team leadership helps me connect visual craft with user behavior, business goals and technical reality.</p>
+          <p style="margin: 20px 0 0; font-size: 17px; line-height: 1.65; color: #1d1d1f">At Snapchat, I led camera-game teams and helped improve entry conversion from 2–5% to over 35% through UI/UX changes, and shipped 10+ game hits on the internal platform. Today I design and polish live-ops features, redesign legacy UI/UX, create quick designs for new game prototypes and tests, and mentor junior artists.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px">
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">UI/UX design</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Figma</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Photoshop</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Blender</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">ComfyUI</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Unity (basic)</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">AI tools</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Art direction</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Concept art</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Visual development</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Data-driven UX</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Feature owner</span>
+            <span style="padding: 8px 14px; border-radius: 999px; background: #ffffff; font-size: 14px">Mentoring</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px">
+            <a class="btn-dark" target="_blank" rel="noopener noreferrer" href="assets/Alina_Proskurnia_CV.pdf" download="Alina_Proskurnia_CV.pdf" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #1d1d1f; font-size: 15px; font-weight: 600; color: #ffffff">Download CV ↓</a>
+            <a class="btn-outline" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alinaproskurnia/" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #ffffff; border: 1px solid #c7c7cc; box-sizing: border-box; font-size: 15px; font-weight: 600; color: #1d1d1f">LinkedIn ↗</a>
+            <a class="btn-outline" href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #ffffff; border: 1px solid #c7c7cc; box-sizing: border-box; font-size: 15px; font-weight: 600; color: #1d1d1f">Say Hi ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div style="margin-top: 120px">
+        <h3 style="margin: 0 0 24px; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 36px; letter-spacing: -0.02em">Experience</h3>
+        <div style="border-top: 1px solid #d9d9de">
+          <div class="exp-row" style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid #d9d9de">
+            <div style="font-size: 15px; color: #66666b">Aug 2024 — Present</div>
+            <div><div style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em">UI/UX Artist</div><div style="margin-top: 2px; font-size: 16px; color: #66666b">Ilyon (Boombox Studio)</div></div>
+          </div>
+          <div class="exp-row" style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid #d9d9de">
+            <div style="font-size: 15px; color: #66666b">Dec 2022 — Aug 2024</div>
+            <div><div style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em">Designer / Art Director</div><div style="margin-top: 2px; font-size: 16px; color: #66666b">Freelance</div></div>
+          </div>
+          <div class="exp-row" style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid #d9d9de">
+            <div style="font-size: 15px; color: #66666b">May 2016 — Sep 2022</div>
+            <div><div style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em">Concept Artist → Art Lead → Game Producer</div><div style="margin-top: 2px; font-size: 16px; color: #66666b">Snapchat</div></div>
+          </div>
+          <div class="exp-row" style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid #d9d9de">
+            <div style="font-size: 15px; color: #66666b">Oct 2015 — Apr 2016</div>
+            <div><div style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em">UI Artist / Concept Artist</div><div style="margin-top: 2px; font-size: 16px; color: #66666b">iLogos</div></div>
+          </div>
+          <div class="exp-row" style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 24px; padding: 24px 0; border-bottom: 1px solid #d9d9de">
+            <div style="font-size: 15px; color: #66666b">Oct 2011 — Oct 2015</div>
+            <div><div style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em">2D Artist</div><div style="margin-top: 2px; font-size: 16px; color: #66666b">Blam! Games</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education / languages / certificates -->
+      <div class="two-col" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; margin-top: 96px">
+        <div>
+          <div style="font-size: 13px; font-weight: 600; color: #66666b; margin-bottom: 14px">Education</div>
+          <div style="font-size: 17px; font-weight: 600; line-height: 1.4">Odessa State Academy of Civil Engineering and Architecture</div>
+          <div style="margin-top: 6px; font-size: 15px; line-height: 1.55; color: #66666b">Master’s, Architecture of Buildings and Structures · 2008–2014</div>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 600; color: #66666b; margin-bottom: 14px">Certificates</div><div style="font-size: 15px; line-height: 1.9">
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/12o6YFeoTGB4_5ivM4n9HXtegpKL7uksw/view?usp=sharing" style="color: #1d1d1f; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #c7c7cc">Data Analyst</a> — GoIT, 2023<br>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1dAKs__IVI0W84dJ37vsRS4quQ4hN2oIg/view?usp=sharing" style="color: #1d1d1f; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #c7c7cc">Product Analyst</a> — Robot_Dreams, 2023<br>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1dAKs__IVI0W84dJ37vsRS4quQ4hN2oIg/view?usp=sharing" style="color: #1d1d1f; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #c7c7cc">Game Producer</a> — progamedev.net, 2022<br>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1XqA3xpFaQuG1XOYtH0lzJ0R0fVc5RyOC/view?usp=sharing" style="color: #1d1d1f; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #c7c7cc">Product Manager</a> — LABA, 2021
+          </div>
+          
+        </div>
+        <div style="font-size: 15px; line-height: 1.9">English — professional<br>Polish, Ukrainian, Russian — native<br>Spanish — beginner</div><div>
+          
+          
+        </div>
+      </div>
+
+      <div style="font-size: 13px; font-weight: 600; color: #66666b; margin-bottom: 14px">Beyond design</div><p style="margin: 0; font-size: 19px; line-height: 1.6; color: #1d1d1f">I’m passionate about data and product analytics — I keep studying it and hold several certifications. It helps me read player behavior and make data-driven decisions. Off the clock: roguelikes, soulslikes, and a PlayStation I’ve loved since the PS1.</p>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; box-sizing: border-box">
+    <div class="two-col" style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: baseline">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.02em">Blog, <i>soon.</i></h2>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #66666b">Short, practical notes about personal projects, UI explorations and the messy middle between idea and final pixels.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 80px; box-sizing: border-box; scroll-margin-top: 56px">
+    <h2 style="margin: 0; text-align: center; font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1.02; letter-spacing: -0.025em">Let’s make something<br>players <i>remember.</i></h2>
+    <p style="margin: 24px auto 0; max-width: 520px; text-align: center; font-size: 19px; line-height: 1.55; color: #66666b">I’m open to new remote opportunities in mobile game UI/UX. Reach out — I reply fast everywhere.</p>
+    <div style="max-width: 640px; margin: 56px auto 0; border-top: 1px solid #e5e5ea">
+      <a class="row-link" target="_blank" rel="noopener noreferrer" href="mailto:aproskurnya1991@gmail.com" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 12px; border-bottom: 1px solid #e5e5ea; color: #1d1d1f">
+        <span style="font-size: 15px; color: #66666b; width: 96px; flex: none">Email</span><span style="flex: 1; font-size: 17px; font-weight: 500">aproskurnya1991@gmail.com</span><span aria-hidden="true">→</span>
+      </a>
+      <a class="row-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alinaproskurnia/" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 12px; border-bottom: 1px solid #e5e5ea; color: #1d1d1f">
+        <span style="font-size: 15px; color: #66666b; width: 96px; flex: none">LinkedIn</span><span style="flex: 1; font-size: 17px; font-weight: 500">in/alinaproskurnia</span><span aria-hidden="true">↗</span>
+      </a>
+      <a class="row-link" target="_blank" rel="noopener noreferrer" href="https://t.me/aproskurnia" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 12px; border-bottom: 1px solid #e5e5ea; color: #1d1d1f">
+        <span style="font-size: 15px; color: #66666b; width: 96px; flex: none">Telegram</span><span style="flex: 1; font-size: 17px; font-weight: 500">@aproskurnia</span><span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 40px; box-sizing: border-box; border-top: 1px solid #e5e5ea; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: #66666b">
+    <span>© 2026 Alina Proskurnia</span>
+    <span>Gijón, Spain</span>
+  </footer>
+</div>
+<script>
+(function(){
+  var wrap=document.getElementById('cf-wrap'), track=document.getElementById('cf-track');
+  if(!wrap||!track) return;
+  var x=0, idle=0.35, v=idle, target=idle;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){idle=0;v=0;target=0;}
+  wrap.addEventListener('mousemove',function(e){
+    var r=wrap.getBoundingClientRect(), rel=((e.clientX-r.left)/r.width)*2-1;
+    var dead=Math.abs(rel)<0.18?0:(Math.abs(rel)-0.18)/0.82;
+    target=Math.sign(rel)*Math.pow(dead,1.6)*7;
+  });
+  wrap.addEventListener('mouseleave',function(){target=idle;});
+  var cards=track.querySelectorAll('.cf');
+  function tick(){
+    v+=(target-v)*0.05;
+    var period=track.scrollWidth/3;
+    x-=v;
+    if(period>0){ if(x<=-period) x+=period; if(x>0) x-=period; }
+    track.style.transform='translate3d('+x.toFixed(2)+'px,0,0)';
+    var vw=wrap.clientWidth;
+    for(var i=0;i<cards.length;i++){
+      var c=cards[i], d=c.offsetLeft+c.offsetWidth/2+x-vw/2;
+      var n=Math.min(Math.abs(d)/(vw*0.55),1), s=1-0.3*Math.pow(n,1.15);
+      c.style.transform='scale('+s.toFixed(4)+')';
+      c.style.zIndex=String(1000-Math.round(Math.abs(d)));
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
